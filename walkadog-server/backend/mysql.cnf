@@ -1,0 +1,5 @@
+[client]
+database = walkadog
+host = localhost
+user = root
+password = teamnova

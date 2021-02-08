@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="메뉴">
+        <menu>
+            <item
+                android:id="@+id/menuHome"
+                android:icon="@drawable/home"
+                android:title="Home" />
+            <item
+                android:id="@+id/menuBroadcastStart"
+                android:icon="@drawable/broadcast"
+                android:title="방송시작" />
+            <item
+                android:id="@+id/menuBroadcastWatch"
+                android:icon="@drawable/watcher"
+                android:title="방송시청" />
+            <item
+                android:id="@+id/menuVodList"
+                android:icon="@drawable/watcher"
+                android:title="VOD" />
+            <item
+                android:id="@+id/menuTracking"
+                android:icon="@drawable/destination"
+                android:title="반려견 위치확인"/>
+
+        </menu>
+    </item>
+
+
+</menu>

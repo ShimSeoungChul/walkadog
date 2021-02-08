@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/kurento.png" type="image/png" />
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/demo-console/index.css">
+    <link rel="stylesheet" href="bower_components/ekko-lightbox/dist/ekko-lightbox.min.css">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/kurento.css">
+    <script src="bower_components/adapter.js/adapter.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/demo-console/index.js"></script>
+    <script src="bower_components/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+
+    <script src="bower_components/kurento-utils/js/kurento-utils.js"></script>
+    <!-- Include jquery, cookies, socket.io (client-side) and your own code -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+
+    <title>Kurento Tutorial 3: Video Call 1 to N with WebRTC</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+      </br>
+      </div>
+    </header>
+
+<main>
+  <div class="container">
+    <div id="console" class="democonsole" style="display:none">
+      <ul></ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="container" id="videoBig">
+          <video id="video" autoplay width="600px" height="450px" poster="img/webrtc.png"></video>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row">
+        <a class="btn btn-primary" id="recordStart">녹화하기</a>
+        <a class="btn btn-danger" id="recordStop">녹화종료</a>
+        </div>
+      </br></br></br>
+        <div id="recordSpinner" class="box" style="display:none; background:#9cd8f2;">
+             <div class="loader1"></div>
+         </div>
+         <h1 id="recordText" style="display:none">RECORDING...</h1>
+         <div id='recordSuc'>방송 녹화 완료!</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="chatbody">
+          <div class="panel panel-primary">
+            <div class="panel-heading top-bar">
+              <div class="col-md-8 col-xs-8">
+              </div>
+            </div>
+
+            <div class="panel-body msg_container_base" id="chat">
+            </div>
+
+            <div class="panel-footer">
+              <div class="input-group">
+                <input id="sendText" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
+                <span class="input-group-btn">
+                  <button class="btn btn-primary btn-sm" id="sendButton"><i class="fa fa-send fa-1x" aria-hidden="true"></i></button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+    <footer>
+      <div class="foot-fixed-bottom">
+      </div>
+    </footer>
+
+  </body>
+</html>

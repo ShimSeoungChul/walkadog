@@ -1,0 +1,64 @@
+@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+.App {
+  font-family: yg-jalnan;
+  background-color:#9cd8f2;
+  min-height: 100vh;
+  padding:50px;
+  font-size:14px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Container{
+  font-family: yg-jalnan;
+  background-color:#9cd8f2;
+  min-height: 100vh;
+  padding:50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size:14px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.vieo_btn{
+  width:100%;
+}
+
+.App--loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

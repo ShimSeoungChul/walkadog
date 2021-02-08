@@ -1,0 +1,271 @@
+@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+html{
+  font-family: yg-jalnan;
+}
+
+.msg_container_base{
+  height: 500px;
+  background: #e5e5e5;
+  margin: 0;
+  padding: 0 10px 10px;
+  max-height:300px;
+  overflow-x:hidden;
+}
+
+.msg_container {
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.msg_container_base::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.msg_container_base::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.msg_container_base::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+.btn-group.dropup{
+    position:fixed;
+    left:0px;
+    bottom:0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+
+.box:nth-child(2n-1){
+    background-color: rgba(255,255,255,255.05);
+}
+
+.box{
+    display: inline-block;
+    height: 200px;
+    width: 33.3%;
+    float:left;
+    position: relative;
+    /*margin:0 -4px -5px -2px;*/
+    transition: all .2s ease;
+}
+
+
+
+.box p{
+    font-family:  Lato,"Helvetica Neue" ;
+    font-weight: 300;
+    position: absolute;
+    font-size: 20px;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    bottom: 0px;
+    margin: 0;
+    top:160px;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+
+.box:hover p{
+    bottom:0px;
+    top:175px;
+    opacity: 1;
+    transition: all .2s ease;
+    z-index: 2;
+}
+
+
+
+
+/* -------------- Loader1 -------------- */
+
+.loader1{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    border: 3px solid  rgba(100,100,100, .7);
+
+    top: 28%;
+    top: -webkit-calc(50% - 43px);
+    top: calc(50% - 43px);
+    left: 35%;
+    left: -webkit-calc(50% - 43px);
+    left: calc(50% - 43px);
+
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-animation: loader1 3s linear infinite;
+            animation: loader1 3s linear infinite;
+}
+
+.loader1:after{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+@-webkit-keyframes loader1{
+    0%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);}
+}
+
+@keyframes loader1{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+/*로딩중 글*/
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,700);
+h1 {
+ font-family: 'Lato';
+ color:$text_color;
+ text-transform: uppercase;
+ font-size:3em;
+ letter-spacing:1.5px;
+ text-align:center;
+ width:155px;
+ margin-top:20px;
+ -webkit-animation: fade 2s infinite;
+ -moz-animation: fade 2s infinite;
+
+}
+
+
+
+@-webkit-keyframes fade {
+  50%{opacity:0.5}
+  100%{opacity:1}
+  ;}
+@-moz-keyframes fade {
+ 50%{opacity:0.5}
+  100%{opacity:1}
+}
+@-o-keyframes fade {
+   50%{opacity:0.5}
+  100%{opacity:1}
+@keyframes fade {
+   50%{opacity:0.5}
+  100%{opacity:1}
+}}
+
+@-webkit-keyframes rise {
+  50% { transform:rotate(30deg);
+  -ms-transform:rotate(30deg); /* IE 9 */
+  -webkit-transform:rotate(30deg);
+  -moz-transform:rotate(30deg);
+    ;}
+}
+@-moz-keyframes rise {
+ 50% { transform:rotate(30deg);
+  -ms-transform:rotate(30deg); /* IE 9 */
+  -webkit-transform:rotate(30deg);
+   -moz-transform:rotate(30deg);
+}
+}
+@-o-keyframes rise {
+  50% { transform:rotate(30deg);
+  -ms-transform:rotate(30deg); /* IE 9 */
+  -webkit-transform:rotate(30deg);
+  -moz-transform:rotate(30deg);
+}
+@keyframes rise {
+  50% { transform:rotate(30deg);
+  -ms-transform:rotate(30deg); /* IE 9 */
+  -webkit-transform:rotate(30deg);
+  -moz-transform:rotate(30deg);
+}
+}}
+
+@-webkit-keyframes fall {
+  50% { transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg); /* IE 9 */
+  -webkit-transform:rotate(-30deg);
+  -moz-transform:rotate(30deg);
+}
+}
+@-moz-keyframes fall {
+ 50% { transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg); /* IE 9 */
+  -webkit-transform:rotate(-30deg);
+  -moz-transform:rotate(-30deg);
+
+ }
+}
+@-o-keyframes fall {
+  50% { transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg); /* IE 9 */
+  -webkit-transform:rotate(-30deg);
+   -moz-transform:rotate(30deg);
+
+  }
+@keyframes fall {
+  50% { transform:rotate(-30deg);
+  -ms-transform:rotate(-30deg); /* IE 9 */
+  -webkit-transform:rotate(-30deg);
+  -moz-transform:rotate(30deg);
+
+  }
+}}
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#recordSuc {
+ visibility: hidden; /* Hidden by default. Visible on click */
+ min-width: 500px; /* Set a default minimum width */
+ margin-left: -125px; /* Divide value of min-width by 2 */
+ background-color: #333; /* Black background color */
+ color: #fff; /* White text color */
+ text-align: center; /* Centered text */
+ border-radius: 2px; /* Rounded borders */
+ padding: 16px; /* Padding */
+ position: fixed; /* Sit on top of the screen */
+ z-index: 1; /* Add a z-index if needed */
+ left: 50%; /* Center the snackbar */
+ bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#recordSuc.show {
+ visibility: visible; /* Show the snackbar */
+ /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+ However, delay the fade out process for 2.5 seconds */
+ -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+ animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+ from {bottom: 0; opacity: 0;}
+ to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+ from {bottom: 0; opacity: 0;}
+ to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+ from {bottom: 30px; opacity: 1;}
+ to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+ from {bottom: 30px; opacity: 1;}
+ to {bottom: 0; opacity: 0;}
+}
