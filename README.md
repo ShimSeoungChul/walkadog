@@ -9,8 +9,8 @@
 
 
 # Introduction .
-<img width="486" alt="포폴1" src="https://user-images.githubusercontent.com/40673012/107179461-e09c5300-6a19-11eb-9814-b6c2775a1cb6.png">
-<img width="490" alt="포폴2" src="https://user-images.githubusercontent.com/40673012/107179478-eabe5180-6a19-11eb-96b5-f1e2485858ff.png">
+![포폴1](https://user-images.githubusercontent.com/40673012/127870549-1219242d-d1ab-4c03-8f3f-56081349116b.png)
+![포폴2](https://user-images.githubusercontent.com/40673012/127870584-5f827121-f9ba-49ea-a642-58b2ec50f1b9.png)
 <img width="563" alt="포폴3" src="https://user-images.githubusercontent.com/40673012/107179471-e5610700-6a19-11eb-9d5e-7a7ba5570f20.png">
 <img width="560" alt="포폴4" src="https://user-images.githubusercontent.com/40673012/107179477-e8f48e00-6a19-11eb-9846-0d17acd9dc50.png">
 <img width="563" alt="포폴5" src="https://user-images.githubusercontent.com/40673012/107179480-ed20ab80-6a19-11eb-9d50-287daac803d8.png">
